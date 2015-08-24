@@ -1,0 +1,245 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+html {
+	font-family: 'Lato', sans-serif;
+	color: white;
+}
+
+body {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%),
+ 	 url("images/background.jpg") no-repeat fixed;
+ 	background-size: cover;
+	color: white;
+}
+
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+// .content {
+// 	float: left;
+// 	width: 65%;
+// 	margin-right: 5%;
+// }
+
+.full {
+	width: 100%;
+}
+
+
+//HEADER
+
+.fox {
+	width: 400px;
+	color: white;
+	margin-left: -200px;
+	margin-top: 10%;
+	position: fixed;
+	stroke-width: .5px;
+	display: none;
+}
+
+h1 a{
+	color: white;
+	position: absolute;
+	left: -90000px;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.menu {
+	display: flex;
+	justify-content: flex-end; 
+	// text-align: right;
+	// position: fixed;
+	// -webkit-transform: rotate(-90deg);
+	// -moz-transform: rotate(-90deg);
+	// -ms-transform: rotate(-90deg);
+	// -o-transform: rotate(-90deg);
+	// filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
+ul.menu li a{
+	background: none;
+	color: white;
+	text-transform: uppercase;
+	flex-direction: column; 
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 200;
+	margin-top: 20px;
+
+}
+
+ul.menu li a:hover {
+	text-decoration: underline;
+}
+
+
+//ABOUT
+.about {
+	text-align: left;
+	margin: 15% 15% 15% 23%;
+	font-size: 40px;
+	font-family: 'EB Garamond', serif;
+}
+
+
+// .arrow {
+// 	text-align: center;
+// 	margin-top: 60px;
+// 	font-size: 25px;
+// 	font-weight: 200;
+// }
+
+
+
+//PORTFOLIO
+
+
+ .portfolio-thing {
+ 	margin-left: 25%;
+ 	width: 80%;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ }
+
+.portfolio-image {
+	width: 50%;
+}
+ .portfolio-image img {
+ 	// width: 45%;
+ 	height: auto;
+ 	border: 1px white solid;
+ 	margin-bottom: 40%;
+ 	// margin-left: 30%;
+ 	// // margin: 33.33%;
+ 	// margin: 15% 0% 15% 23%;	
+ }
+
+ .portfolio-content {
+ 	width: 40%;
+ 	margin-left: 3%;
+ 	align-items: flex-start;
+ }
+
+.portfolio-content h2 {
+	font-family: 'EB Garamond', serif;
+	font-size: 32px;
+	margin-bottom: 10px;
+    text-align: center;
+    // letter-spacing: 2.5px;
+}
+
+.portfolio-content h4 {
+	margin: 10px;
+    font-weight: 200;
+    text-align: center;
+    padding: 3px;
+}
+
+.portfolio-content p {
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	font-weight: 200;
+	text-transform: uppercase;
+	padding: 5px;
+	border-top: 1px white solid;
+    border-bottom: 1px white solid;
+	width: 100%;
+	flex-direction: column;
+	margin: 0;
+}
+
+
+.portfolio-thing a {
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	border: 1px solid white;
+	color: white;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+
+
+//CONTACT
+
+.contact {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 12%;
+}
+
+.contact a {
+	color: white;
+	text-decoration: none;
+	font-family: 'EB Garamond', serif;
+
+}
+
+
+// .contact a:after {
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   bottom: 2;
+//   width: 0;
+//   height: 2px;
+//   background-color: white;
+//   content: "";
+//   transition: width 0.2s;
+// }
+
+// .contact ul li a {
+//   padding: 0;
+//  }
+
+// .contact a:hover:after {
+//   width: 100%;
+// }
+
+// .contact a{
+// 	padding: 0;
+// }
+
+
+// SOCIAL MEDIA
+.social-media {
+	text-align: center;
+	margin-bottom: 10%;
+}
+.social-media a {
+	color: white;
+	font-size: 35px;
+	padding: 40px;
+
+}
